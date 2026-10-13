@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Rafael Zamora</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración personalizada de Tailwind (opcional, para asegurar los tonos) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a', /* blue-900 */
+                        secondary: '#2563eb', /* blue-600 */
+                        accent: '#bfdbfe', /* blue-200 */
+                        light: '#f8fafc' /* slate-50 */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-blue-50 text-slate-800 font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="bg-primary text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider">RZ</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#sobre-mi" class="hover:text-accent transition">Sobre mí</a>
+                <a href="#experiencia" class="hover:text-accent transition">Experiencia</a>
+                <a href="#proyectos" class="hover:text-accent transition">Proyectos</a>
+                <a href="#tecnologias" class="hover:text-accent transition">Tecnologías</a>
+                <a href="#formacion" class="hover:text-accent transition">Formación</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero (Presentación) -->
+    <header class="bg-gradient-to-r from-primary to-secondary text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-accent text-lg font-semibold mb-2">¡Hola! Soy</h2>
+                <h1 class="text-5xl font-bold mb-4">Rafael Zamora</h1>
+                <p class="text-xl text-blue-100 mb-6">
+                    Estudiante de Ingeniería en Ciencias y Sistemas (Pensum Cerrado)| Desarrollo de Software | Soporte
+                    de Aplicaciones y Plataformas
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#proyectos"
+                        class="bg-white text-primary px-6 py-2 rounded-full font-semibold hover:bg-accent transition shadow-lg">Ver
+                        mis proyectos</a>
+                    <a href="./Tobías Rafael Zamora santos V4.pdf" target="_blank"
+                        class="border-2 border-white text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-primary transition">Descargar
+                        CV</a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <!-- Aquí puedes poner tu foto en la carpeta images -->
+                <img src="./images/foto_personal.jpg" alt="Foto de Rafael"
+                    class="w-64 h-64 object-cover rounded-full border-4 border-accent shadow-2xl">
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="bg-blue-50 py-16 max-w-6xl mx-auto px-4">
+
+        <!-- Banner Sobre Mí -->
+        <div class="mb-12 text-center">
+            <img src="./images/Sobre mi.png" alt="Banner Sobre Mí"
+                class="w-full rounded-xl shadow-lg border-4 border-white">
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Columna Izquierda: Datos Personales -->
+            <div class="bg-white p-6 rounded-xl shadow-md border-t-4 border-primary h-fit">
+                <h3 class="text-2xl font-bold text-primary mb-5 border-b pb-2">Datos Personales</h3>
+                <ul class="space-y-3 text-sm text-slate-700">
+                    <li><strong class="text-slate-900">Edad:</strong> 26 años (04/10/2000)</li>
+                    <li><strong class="text-slate-900">Nacionalidad:</strong> Guatemalteca</li>
+                    <li><strong class="text-slate-900">Estado Civil:</strong> Soltero</li>
+                    <li><strong class="text-slate-900">Licencia de conducir:</strong> Tipo C</li>
+                    <li><strong class="text-slate-900">Teléfono:</strong> +502 30283499</li>
+                    <li><strong class="text-slate-900">Correo:</strong> <a href="mailto:r.zamorasantos@gmail.com"
+                            class="text-secondary hover:underline">r.zamorasantos@gmail.com</a></li>
+
+
+                </ul>
+
+
+            </div>
+
+            <!-- Columna Derecha: Formación Académica -->
+            <div class="md:col-span-2 space-y-6">
+                <h3 class="text-2xl font-bold text-primary mb-5 border-b pb-2">Formación Académica</h3>
+
+                <!-- Universidad -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex flex-col sm:flex-row items-start sm:space-x-4 border-l-4 border-secondary hover:bg-slate-50 transition">
+                    <div
+                        class="w-16 h-16 mb-4 sm:mb-0 bg-slate-100 rounded flex-shrink-0 flex items-center justify-center text-xs text-slate-400 overflow-hidden border">
+                        <img src="./images/logo_usac.png" alt="Logo USAC" class="w-full h-full object-contain p-1"
+                            onerror="this.outerHTML='<span class=\'text-center p-1\'>Logo USAC</span>'">
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800">Universidad de San Carlos de Guatemala (USAC)</h4>
+                        <p class="text-secondary font-semibold">Ingeniería en Ciencias y Sistemas</p>
+                        <p class="text-sm text-slate-600 mt-1 flex items-center">
+                            <svg class="w-4 h-4 mr-1 text-slate-400" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            Ciudad Universitaria, 11.ª Avenida, Zona 12, Ciudad de Guatemala, Guatemala
+                        </p>
+                        <div
+                            class="mt-2 inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded font-semibold">
+                            Cierre de pensum
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Diversificado -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex flex-col sm:flex-row items-start sm:space-x-4 border-l-4 border-secondary hover:bg-slate-50 transition">
+                    <div
+                        class="w-16 h-16 mb-4 sm:mb-0 bg-slate-100 rounded flex-shrink-0 flex items-center justify-center text-xs text-slate-400 overflow-hidden border">
+                        <img src="./images/logo_kinal.webp" alt="Logo Kinal" class="w-full h-full object-contain p-1"
+                            onerror="this.outerHTML='<span class=\'text-center p-1\'>Logo Kinal</span>'">
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800">Fundación Kinal</h4>
+                        <p class="text-secondary font-semibold">Perito en Computación y Bachiller en Ciencias y Letras
+                        </p>
+                        <p class="text-sm text-slate-600 mt-1 flex items-start">
+                            <svg class="w-4 h-4 mr-1 mt-0.5 text-slate-400 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            6ª avenida 13-54, zona 7, Colonia Landívar, Ciudad de Guatemala, Guatemala
+                        </p>
+                        <div class="mt-3">
+                            <a href="https://drive.google.com/file/d/1tdylq65R_wG5juaHARTBqCPiWEXG3LrG/view?usp=sharing"
+                                target="_blank"
+                                class="inline-flex items-center px-3 py-1.5 bg-slate-800 text-white text-sm rounded hover:bg-slate-700 transition shadow-sm">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Ver Títulos Escaneados
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Básico -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex flex-col sm:flex-row items-start sm:space-x-4 border-l-4 border-secondary hover:bg-slate-50 transition">
+                    <div
+                        class="w-16 h-16 mb-4 sm:mb-0 bg-slate-100 rounded flex-shrink-0 flex items-center justify-center text-xs text-slate-400 overflow-hidden border">
+                        <img src="./images/logo_la_salle.jpg" alt="Logo La Salle"
+                            class="w-full h-full object-contain p-1"
+                            onerror="this.outerHTML='<span class=\'text-center p-1\'>Logo La Salle</span>'">
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-slate-800">Colegio La Salle</h4>
+                        <p class="text-secondary font-semibold">Ciclo Básico (Primero a Tercero Básico)</p>
+                        <p class="text-sm text-slate-600 mt-1 flex items-start">
+                            <svg class="w-4 h-4 mr-1 mt-0.5 text-slate-400 flex-shrink-0" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            4ª. Avenida Norte No. 26, La Antigua Guatemala, Sacatepéquez
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Experiencia y Liderazgo (Actividades Universitarias) -->
+    <section id="experiencia" class="bg-blue-50 py-16 max-w-6xl mx-auto px-4">
+
+        <!-- Banner de Actividades -->
+        <div class="max-w-6xl mx-auto px-4 mb-12 text-center">
+            <img src="./images/Proyectos.png" alt="Proyectos o Actividades que he realizado"
+                class="w-full rounded-xl shadow-lg border-4 border-accent shadow-2xl">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 space-y-16">
+
+            <!-- 1. COECYS -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-8">
+                <!-- Encabezado -->
+                <div class="flex flex-col md:flex-row md:items-center justify-between mb-6 border-b pb-4 gap-4">
+                    <div class="flex items-center space-x-4">
+                        <!-- Reemplazar con el logo de COECYS -->
+                        <img src="./images/COECYS/logo.png" alt="Logo COECYS 2025" class="w-16 h-16 object-contain"
+                            onerror="this.outerHTML='<div class=\'w-16 h-16 bg-blue-100 text-primary font-bold flex items-center justify-center rounded-full\'>C25</div>'">
+                        <div>
+                            <h2 class="text-3xl font-bold text-primary">Comité Organizador COECYS 2025</h2>
+                            <p class="text-lg text-secondary font-medium">Encargado de Visitas Técnicas</p>
+                        </div>
+                    </div>
+                    <!-- Botón de Credencial -->
+                    <a href="https://drive.google.com/file/d/10KFhtmDBtIrPIXFq2NMEn_GATwAZksT4/view?usp=sharing"
+                        target="_blank"
+                        class="inline-flex items-center justify-center px-4 py-2 bg-slate-800 text-white text-sm font-semibold rounded hover:bg-slate-700 transition shadow">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        Ver Aval de Nombramiento
+                    </a>
+                </div>
+
+                <!-- Descripción -->
+                <div class="space-y-4 mb-10 text-slate-600 leading-relaxed">
+                    <p>
+                        El <a href="https://coecys.org/" target="_blank"
+                            class="text-secondary hover:underline font-semibold">Congreso de Estudiantes de Ciencias y
+                            Sistemas (COECYS)</a> es el evento de tecnología más importante organizado por la Escuela de
+                        Ingeniería en Ciencias y Sistemas de la USAC. El ciclo de conferencias principal se llevó a cabo
+                        en el <strong>Edificio Campus Tecnológico TEC</strong>.
+                    </p>
+                    <p>
+                        Como <strong>Encargado de Visitas Técnicas</strong>, gestioné y coordiné recorridos estratégicos
+                        para acercar a los estudiantes a entornos empresariales y de misión crítica, incluyendo:
+                    </p>
+
+
+                    <div class="grid md:grid-cols-2 gap-6 mt-6">
+                        <div class="flex items-start bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <img src="./images/COECYS/logo_inde.png" alt="Logo INDE"
+                                class="w-10 h-10 object-contain mr-3 shrink-0"
+                                onerror="this.src='https://via.placeholder.com/40?text=INDE'">
+                            <span class="text-sm text-slate-700"><strong>INDE (Subestación Sur):</strong> Observación y
+                                análisis de su sistema SCADA para el control eléctrico.</span>
+                        </div>
+                        <div class="flex items-start bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <img src="./images/COECYS/logo_cpn.jpg" alt="Logo CPN"
+                                class="w-10 h-10 object-contain mr-3 shrink-0"
+                                onerror="this.src='https://via.placeholder.com/40?text=CPN'">
+                            <span class="text-sm text-slate-700"><strong>Comisión Portuaria Nacional (CPN):</strong>
+                                Visita tecnológica institucional.</span>
+                        </div>
+                        <div class="flex items-start bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <img src="./images/COECYS/logo_bayer.png" alt="Logo Bayer"
+                                class="w-10 h-10 object-contain mr-3 shrink-0"
+                                onerror="this.src='https://via.placeholder.com/40?text=Bayer'">
+                            <span class="text-sm text-slate-700"><strong>Bayer (Planta Roosevelt):</strong> Recorrido
+                                enfocado en su proyecto de automatización industrial.</span>
+                        </div>
+                        <div class="flex items-start bg-slate-50 p-3 rounded-lg border border-slate-100">
+                            <img src="./images/COECYS/logo_amm.jpg" alt="Logo AMM"
+                                class="w-10 h-10 object-contain mr-3 shrink-0"
+                                onerror="this.src='https://via.placeholder.com/40?text=AMM'">
+                            <span class="text-sm text-slate-700"><strong>AMM (Administrador del Mercado
+                                    Mayorista):</strong> Análisis de infraestructura de servidores y operaciones
+                                tecnológicas en Zona 10.</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mega Galería -->
+                <div>
+                    <h3 class="text-xl font-bold text-primary mb-6 border-b pb-2">Galería del Evento y Visitas</h3>
+                    <!-- Grid responsivo: 2 columnas en móviles, 3 en tablets, 4 o 5 en pantallas grandes -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+
+                        <!-- Fotos de Juramentación -->
+                        <a href="./images/COECYS/juramentacion.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/juramentacion.jpeg" alt="Juramentación 1"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>juramentacion.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/juramentacion2.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/juramentacion2.jpeg" alt="Juramentación 2"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>juramentacion2.jpeg</div>'">
+                        </a>
+
+                        <!-- Fotos del TEC -->
+                        <a href="./images/COECYS/tec1.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec1.jpeg" alt="Campus TEC 1"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec1.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/tec2.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec2.jpeg" alt="Campus TEC 2"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec2.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/tec3.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec3.jpeg" alt="Campus TEC 3"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec3.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/tec4.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec4.jpeg" alt="Campus TEC 4"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec4.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/tec5.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec5.jpeg" alt="Campus TEC 5"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec5.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/tec6.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/tec6.jpeg" alt="Campus TEC 6"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>tec6.jpeg</div>'">
+                        </a>
+
+                        <!-- Fotos de Visitas (F1 a F9) -->
+                        <a href="./images/COECYS/f1.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f1.JPG" alt="Visita 1"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f1.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f2.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f2.JPG" alt="Visita 2"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f2.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f3.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f3.JPG" alt="Visita 3"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f3.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f4.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f4.JPG" alt="Visita 4"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f4.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f5.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f5.JPG" alt="Visita 5"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f5.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f6.JPG" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f6.JPG" alt="Visita 6"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f6.JPG</div>'">
+                        </a>
+                        <a href="./images/COECYS/f7.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f7.jpeg" alt="Visita 7"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f7.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/f8.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f8.jpeg" alt="Visita 8"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f8.jpeg</div>'">
+                        </a>
+                        <a href="./images/COECYS/f9.jpeg" target="_blank"
+                            class="group block overflow-hidden rounded-xl shadow-sm hover:shadow-lg transition">
+                            <img src="./images/COECYS/f9.jpeg" alt="Visita 9"
+                                class="w-full aspect-square object-cover group-hover:scale-110 transition duration-300"
+                                onerror="this.outerHTML='<div class=\'w-full aspect-square bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>f9.jpeg</div>'">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Auxiliatura -->
+            <div class="bg-slate-50 p-8 rounded-2xl border-l-4 border-primary shadow-sm mt-16">
+                <!-- Encabezado de la sección -->
+                <div class="flex flex-col md:flex-row justify-between mb-6 gap-4 border-b pb-4">
+                    <div>
+                        <h2 class="text-3xl font-bold text-primary mb-2">Tutor Académico (Auxiliar de Laboratorio)</h2>
+                        <h3 class="text-xl text-secondary font-semibold">Curso: Introducción a la Programación y
+                            Computación 2 (Primer Semestre 2026)</h3>
+                        <p class="text-sm text-slate-500 mt-1">Catedrático de clase magistral: Ing. Zapeta</p>
+                    </div>
+                    <!-- Botón Portafolio Docente -->
+                    <div class="shrink-0 flex items-center">
+                        <a href="https://drive.google.com/file/d/1K6y2Bv7vrGJK9aK-GK1EmKLiffBTHG5m/view?usp=sharing"
+                            target="_blank"
+                            class="inline-flex items-center justify-center px-4 py-2 bg-slate-800 text-white text-sm font-semibold rounded-lg hover:bg-slate-700 transition shadow">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                </path>
+                            </svg>
+                            Ver Portafolio Docente (PDF)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-10 items-start">
+                    <!-- Descripción y Repositorio -->
+                    <div class="space-y-6">
+                        <p class="text-slate-600 leading-relaxed">
+                            Fui el encargado de impartir los laboratorios prácticos del curso. Mi trabajo se enfocó en
+                            enseñar desarrollo de software utilizando el entorno de <strong>C# y el ecosistema
+                                .NET</strong>. Los temas principales que impartí abarcaron el diseño y uso de Tipos de
+                            Datos Abstractos (TDAs), manejo de estructuras de datos como listas enlazadas, y buenas
+                            prácticas de programación.
+                        </p>
+
+                        <a href="https://github.com/rafa-04102000/IPC2_N_1S2026_Ejemplos.git" target="_blank"
+                            class="inline-flex items-center px-5 py-2.5 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition shadow">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            Ver Repositorio de Ejemplos
+                        </a>
+
+                        <!-- Asignación Oficial Portal -->
+                        <div class="mt-8">
+                            <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-3">Constancia
+                                Oficial de Asignación</p>
+                            <a href="./images/Auxiliatura/portal_ingenieria.png" target="_blank"
+                                class="block border-2 border-slate-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition">
+                                <img src="./images/Auxiliatura/portal_ingenieria.png"
+                                    alt="Asignación Portal de Ingeniería"
+                                    class="w-full object-cover max-h-32 object-top"
+                                    onerror="this.outerHTML='<div class=\'w-full h-24 bg-slate-200 flex items-center justify-center text-xs text-slate-500\'>portal_ingenieria.png</div>'">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Material Visual Auxiliatura (Diagramas Corregidos) -->
+                    <div class="space-y-4">
+                        <p class="text-sm font-semibold text-slate-500 uppercase tracking-wide">Material y Diagramas de
+                            Clase</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Diagrama .NET -->
+                            <a href="./images/Auxiliatura/diagrama-net.png" target="_blank"
+                                class="block border rounded-lg overflow-hidden hover:shadow-md transition bg-white">
+                                <img src="./images/Auxiliatura/diagrama-net.png" alt="Ecosistema .NET"
+                                    class="w-full h-32 object-contain p-2"
+                                    onerror="this.src='https://via.placeholder.com/300x150?text=Ecosistema+.NET'">
+                                <div class="bg-slate-100 p-2 text-xs font-semibold text-center text-slate-700 border-t">
+                                    Ecosistema .NET</div>
+                            </a>
+                            <!-- Diagrama TDAs -->
+                            <a href="./images/Auxiliatura/diagrama-tdas.png" target="_blank"
+                                class="block border rounded-lg overflow-hidden hover:shadow-md transition bg-white">
+                                <img src="./images/Auxiliatura/diagrama-tdas.png" alt="Estructuras TDAs"
+                                    class="w-full h-32 object-contain p-2"
+                                    onerror="this.src='https://via.placeholder.com/300x150?text=TDAs+IPC2'">
+                                <div class="bg-slate-100 p-2 text-xs font-semibold text-center text-slate-700 border-t">
+                                    TDAs (Listas Enlazadas)</div>
+                            </a>
+                        </div>
+                        <p class="text-xs text-slate-400 italic mt-2">* Haz clic en las imágenes y diagramas para verlos
+                            en tamaño completo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Conferencias -->
+            <div class="mt-16">
+                <h2 class="text-3xl font-bold text-primary mb-8 border-b pb-4">Conferencias Impartidas</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+
+                    <!-- Conferencia 1 (Java - Presencial) -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                        <!-- Banner -->
+                        <img src="./images/Conferencias/Del problema al programa.jpg" alt="Del problema al programa"
+                            class="w-full h-auto object-contain border-b bg-slate-50"
+                            onerror="this.src='https://via.placeholder.com/600x200?text=Banner+Conferencia'">
+
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span
+                                class="text-xs font-bold text-blue-800 bg-blue-100 px-2 py-1 rounded uppercase tracking-wide w-max mb-3">0768
+                                - Intro a los Algoritmos</span>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Del problema al programa</h3>
+                            <ul class="text-sm text-slate-600 space-y-1 mb-4">
+                                <li><strong>Fecha:</strong> 20/09/2025</li>
+                                <li><strong>Lugar:</strong> Salón 214 - Edificio T3, Facultad de Ingeniería</li>
+                            </ul>
+
+                            <!-- Foto impartiendo la conferencia -->
+                            <div
+                                class="mb-4 rounded-lg overflow-hidden border border-slate-200 shadow-sm relative group cursor-pointer">
+                                <a href="./images/Conferencias/Conferencia_Algoritmos_T3.jpg" target="_blank">
+                                    <img src="./images/Conferencias/Conferencia_Algoritmos_T3.jpg"
+                                        alt="Impartiendo la conferencia en el T3"
+                                        class="w-full h-32 object-cover object-center group-hover:scale-105 transition duration-300"
+                                        onerror="this.src='https://via.placeholder.com/400x200?text=Foto+T3'">
+                                    <div
+                                        class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white text-xs text-center py-1">
+                                        Vista en el salón T3
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="mt-auto space-y-2">
+                                <span
+                                    class="block text-center text-xs text-slate-400 bg-slate-50 py-2 rounded border border-dashed">Ejemplo
+                                    desarrollado en Java (Repositorio no público)</span>
+                                <a href="https://www.facebook.com/share/p/1HWU6fgXMW/" target="_blank"
+                                    class="block text-center text-secondary text-sm font-semibold hover:underline">Ver
+                                    publicación oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conferencia 2 (Python) -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                        <!-- Banner -->
+                        <img src="./images/Conferencias/Modelado lógico y arquitectura de datos_ optimización de procesos con Python.jpg"
+                            alt="Modelado lógico y arquitectura de datos"
+                            class="w-full h-auto object-contain border-b bg-slate-50"
+                            onerror="this.src='https://via.placeholder.com/600x200?text=Banner+Conferencia'">
+
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span
+                                class="text-xs font-bold text-blue-800 bg-blue-100 px-2 py-1 rounded uppercase tracking-wide w-max mb-3">0768
+                                - Intro a los Algoritmos</span>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Modelado lógico y arquitectura de datos:
+                                optimización de procesos con Python</h3>
+                            <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                                <li><strong>Fecha:</strong> 11/04/2026</li>
+                                <li><strong>Medio:</strong> Google Meet</li>
+                            </ul>
+                            <div class="mt-auto space-y-2">
+                                <a href="https://github.com/rafa-04102000/Conferencia_Algoritmos_S1_2026.git"
+                                    target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-slate-800 text-white text-sm rounded hover:bg-slate-700 transition">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Ver Código en Python
+                                </a>
+                                <a href="https://www.facebook.com/share/p/1DWPLCbhTL/" target="_blank"
+                                    class="block text-center text-secondary text-sm font-semibold hover:underline">Ver
+                                    publicación oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conferencia 3 (.NET) -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+                        <!-- Banner -->
+                        <img src="./images/Conferencias/DEL MODELO AL ENDPOINT APIS RESTFUL CON .NET Y SWAGGER.jpg"
+                            alt="Del Modelo al Endpoint" class="w-full h-auto object-contain border-b bg-slate-50"
+                            onerror="this.src='https://via.placeholder.com/600x200?text=Banner+Conferencia'">
+
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span
+                                class="text-xs font-bold text-blue-800 bg-blue-100 px-2 py-1 rounded uppercase tracking-wide w-max mb-3">0771
+                                - IPC 2 (Segundo Semestre 2026)</span>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Del Modelo al Endpoint: APIs RESTfull con
+                                .NET y Swagger</h3>
+                            <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                                <li><strong>Fecha:</strong> 21/09/2026</li>
+                                <li><strong>Medio:</strong> Google Meet</li>
+                            </ul>
+                            <div class="mt-auto space-y-2">
+                                <a href="https://drive.google.com/file/d/1TxMrJXMDbifc--rbsjLvnepbj8KWMXYM/view?usp=sharing"
+                                    target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-green-700 text-white text-sm rounded hover:bg-green-600 transition">
+                                    📄 Desmitificando el Backend (PDF)
+                                </a>
+                                <a href="https://github.com/rafa-04102000/Conferencia_IPC2_N_API_RESTful.git"
+                                    target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-slate-800 text-white text-sm rounded hover:bg-slate-700 transition">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Ver Código de Ejemplo
+                                </a>
+                                <a href="https://www.facebook.com/share/p/17dSpT5za1/" target="_blank"
+                                    class="block text-center text-secondary text-sm font-semibold hover:underline">Ver
+                                    publicación oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conferencia 4 (Go y ANTLR) -->
+                    <div
+                        class="bg-white border border-slate-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col border-t-4 border-t-secondary">
+                        <!-- Banner -->
+                        <img src="./images/Conferencias/Traducción a ARM64 Implementación de un compilador con GO y ANTLR.jpg"
+                            alt="Traducción a ARM64" class="w-full h-auto object-contain border-b bg-slate-50"
+                            onerror="this.src='https://via.placeholder.com/600x200?text=Banner+Conferencia'">
+
+                        <div class="p-6 flex flex-col flex-grow">
+                            <span
+                                class="text-xs font-bold text-white bg-secondary px-2 py-1 rounded uppercase tracking-wide w-max mb-3">0781
+                                - Compiladores 2</span>
+                            <h3 class="text-xl font-bold text-slate-800 mb-2">Traducción a ARM64: Implementación de un
+                                compilador con GO y ANTLR</h3>
+                            <ul class="text-sm text-slate-600 space-y-1 mb-6">
+                                <li><strong>Fecha:</strong> 22/09/2026</li>
+                                <li><strong>Medio:</strong> Google Meet</li>
+                            </ul>
+
+                            <div class="bg-blue-50 text-blue-800 text-xs p-3 rounded mb-4">
+                                <strong>Dato Técnico:</strong> Repositorio configurado con Pipeline de CI/CD (GitHub
+                                Actions) para el despliegue automatizado de la documentación usando MkDocs en GitHub
+                                Pages.
+                            </div>
+
+                            <div class="mt-auto space-y-2">
+                                <a href="https://rafa-04102000.github.io/Conferencia_OLC2/" target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition shadow">
+                                    🌐 Ver Documentación en MkDocs
+                                </a>
+                                <a href="https://drive.google.com/file/d/1lNJvFHdt2fmg4_FsyqICBk_o6_b_iJgV/view?usp=sharing"
+                                    target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-green-700 text-white text-sm rounded hover:bg-green-600 transition">
+                                    📄 De la Sintaxis al Binario (PDF)
+                                </a>
+                                <a href="https://github.com/rafa-04102000/Conferencia_OLC2.git" target="_blank"
+                                    class="w-full inline-flex items-center justify-center px-4 py-2 bg-slate-800 text-white text-sm rounded hover:bg-slate-700 transition">
+                                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd"
+                                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    Ver Repositorio
+                                </a>
+                                <a href="https://www.facebook.com/share/p/1Du8hsjNAs/" target="_blank"
+                                    class="block text-center text-secondary text-sm font-semibold hover:underline">Ver
+                                    publicación oficial</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Nota de la Escuela -->
+                <div class="mt-8 bg-slate-50 border border-slate-200 rounded-lg p-4 text-center">
+                    <p class="text-sm text-slate-600">
+                        * Todos los temas y conferencistas son respaldados y publicados oficialmente por la <a
+                            href="https://www.facebook.com/ecysFIUSAC" target="_blank"
+                            class="text-secondary font-bold hover:underline">Escuela de Ciencias y Sistemas -
+                            FIUSAC</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section id="proyectos" class="py-20 bg-blue-50">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Encabezado de la sección -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-secondary font-bold tracking-wider uppercase text-sm">Portafolio Técnico</span>
+                <h2 class="text-4xl font-bold text-primary mt-2 mb-4">Proyectos destacados</h2>
+                <p class="text-slate-600 text-lg">
+                    Proyectos universitarios avanzados y desarrollos personales enfocados en arquitectura de
+                    microservicios, compiladores, bases de datos y despliegue en la nube (Cloud & DevOps).
+                </p>
+            </div>
+
+            <!-- Grid de Proyectos (2 columnas amplias para que las fotos luzcan grandes y 1 columna completa para proyectos masivos) -->
+            <div class="grid lg:grid-cols-2 gap-10">
+
+                <!-- Proyecto 1: V-Lang Cherry (Compilador ARM64) -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col">
+                    <!-- Contenedor de Imagen Principal Más Grande -->
+                    <div class="p-4 bg-slate-100 border-b border-slate-200">
+                        <a href="./images/Proyectos/p1_OLC2_traductor_arm64.png" target="_blank"
+                            class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900">
+                            <img src="./images/Proyectos/p1_OLC2_traductor_arm64.png"
+                                alt="V-Lang Cherry Traductor ARM64"
+                                class="w-full h-64 object-contain group-hover:scale-105 transition duration-300"
+                                onerror="this.src='https://via.placeholder.com/600x400?text=Compilador+ARM64'">
+                        </a>
+                    </div>
+
+                    <!-- Cuerpo de la Tarjeta -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-semibold text-secondary mb-1 uppercase tracking-wide">0781 -
+                            Organización de Lenguajes y Compiladores 2</div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-3">Compilador e Intérprete V-Lang Cherry a ARM64
+                        </h3>
+
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Desarrollo de un analizador léxico, sintáctico y semántico para una variante del lenguaje V.
+                            Implementa traducción directa a código ensamblador <strong>ARM64</strong> (sin paso por
+                            código intermedio de 3 direcciones), listo para ensamblar, enlazar y ejecutar mediante
+                            <strong>QEMU</strong> en Linux. Incluye generación de árbol CST, tabla de símbolos y gestión
+                            de errores.
+                        </p>
+
+                        <!-- Galería de Entregables Más Grande -->
+                        <div class="mb-6 bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <p class="text-xs font-bold text-slate-600 mb-3 uppercase tracking-wider">Salidas y reportes
+                                (clic para ampliar):</p>
+                            <div class="grid grid-cols-3 gap-3">
+                                <a href="./images/Proyectos/p1_OLC2_traductor_arm64_arbol_cst.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group"
+                                    title="Ver Árbol CST">
+                                    <img src="./images/Proyectos/p1_OLC2_traductor_arm64_arbol_cst.png" alt="Árbol CST"
+                                        class="w-full h-24 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/150?text=CST'">
+                                    <span
+                                        class="block text-xs font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t">Árbol
+                                        CST</span>
+                                </a>
+                                <a href="./images/Proyectos/p1_OLC2_traductor_arm64_tabla_simbolos.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group"
+                                    title="Ver Tabla de Símbolos">
+                                    <img src="./images/Proyectos/p1_OLC2_traductor_arm64_tabla_simbolos.png"
+                                        alt="Tabla de Símbolos"
+                                        class="w-full h-24 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/150?text=Simbolos'">
+                                    <span
+                                        class="block text-xs font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t">Tabla
+                                        Símbolos</span>
+                                </a>
+                                <a href="./images/Proyectos/p1_OLC2_traductor_arm64_salida.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group"
+                                    title="Ver Salida en Consola">
+                                    <img src="./images/Proyectos/p1_OLC2_traductor_arm64_salida.png" alt="Salida ARM64"
+                                        class="w-full h-24 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/150?text=Salida'">
+                                    <span
+                                        class="block text-xs font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t">Ejecución
+                                        QEMU</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Etiquetas (Pills) -->
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Go
+                                (Golang)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">ANTLR4</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">ARM64
+                                Assembly</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">QEMU</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Ubuntu
+                                Linux</span>
+                        </div>
+
+                        <!-- Enlace inferior -->
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
+                            <span class="text-slate-400 font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                                Repositorio Privado
+                            </span>
+                            <a href="./images/Proyectos/p1_OLC2_traductor_arm64.png" target="_blank"
+                                class="text-primary font-bold hover:text-secondary transition flex items-center">
+                                Ver imagen principal <span class="ml-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Consultor_A_DB -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col">
+                    <!-- Contenedor de Imagen Principal Más Grande -->
+                    <div class="p-4 bg-slate-100 border-b border-slate-200">
+                        <a href="./images/Proyectos/consultor_a_db.jpeg" target="_blank"
+                            class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900">
+                            <img src="./images/Proyectos/consultor_a_db.jpeg" alt="Consultor A DB Interfaz"
+                                class="w-full h-64 object-contain group-hover:scale-105 transition duration-300"
+                                onerror="this.src='https://via.placeholder.com/600x400?text=Consultor+SQL+Web'">
+                        </a>
+                    </div>
+
+                    <!-- Cuerpo de la Tarjeta -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="text-xs font-semibold text-secondary mb-1 uppercase tracking-wide">Herramienta de
+                            Base de Datos & DevOps</div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-3">Consultor_A_DB (Cliente SQL Web Colaborativo)
+                        </h3>
+
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Aplicación web diseñada para equipos de trabajo que permite ejecutar consultas a instancias
+                            remotas de <strong>MySQL</strong> (ej. AWS RDS) desde el navegador, evitando instalaciones
+                            locales. Desplegada en producción (EC2) mediante <strong>Docker Compose</strong>, integrando
+                            proxy inverso con <strong>Nginx</strong> para mitigación de CORS e inyección segura de
+                            variables de entorno (<code>.env</code>).
+                        </p>
+
+                        <!-- Vista previa de resultados más grande -->
+                        <div class="mb-6 bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <p class="text-xs font-bold text-slate-600 mb-3 uppercase tracking-wider">Evidencia de
+                                funcionamiento (clic para ampliar):</p>
+                            <a href="./images/Proyectos/consultor_a_db_resultados.jpeg" target="_blank"
+                                class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                <img src="./images/Proyectos/consultor_a_db_resultados.jpeg"
+                                    alt="Resultados de consulta"
+                                    class="w-full h-24 object-cover object-top group-hover:scale-105 transition"
+                                    onerror="this.src='https://via.placeholder.com/400x150?text=Resultados+SQL'">
+                                <span
+                                    class="block text-xs font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t">Ejecución
+                                    de Queries y Resultados en Tiempo Real →</span>
+                            </a>
+                        </div>
+
+                        <!-- Etiquetas (Pills) -->
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">React</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Node.js
+                                & Express</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">MySQL</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Docker
+                                Compose</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Nginx</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Tailwind
+                                & MUI</span>
+                        </div>
+
+                        <!-- Enlace inferior -->
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
+                            <a href="https://github.com/rafa-04102000/Consultor_A_DB.git" target="_blank"
+                                class="text-primary font-bold hover:text-secondary transition flex items-center">
+                                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                Ver repositorio y guía de despliegue <span class="ml-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3: EconoMarket (Ocupa las 2 columnas completas por su magnitud) -->
+                <div
+                    class="lg:col-span-2 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col">
+
+                    <!-- Cabecera visual doble: Arquitectura y Pipeline CI/CD -->
+                    <div class="p-6 bg-slate-100 border-b border-slate-200 grid md:grid-cols-2 gap-6">
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Arquitectura de
+                                Microservicios & K8s</span>
+                            <a href="./images/Proyectos/tienda_online_diagrama_arquitectura.png" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-white border border-slate-200">
+                                <img src="./images/Proyectos/tienda_online_diagrama_arquitectura.png"
+                                    alt="Diagrama de Arquitectura EconoMarket"
+                                    class="w-full h-72 object-contain p-2 group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=Diagrama+Arquitectura'">
+                            </a>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Pipeline CI/CD (GitHub
+                                Actions, Matrix Build & Deploy)</span>
+                            <a href="./images/Proyectos/tienda_online_ci_cd_completo.png" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900 border border-slate-200">
+                                <img src="./images/Proyectos/tienda_online_ci_cd_completo.png"
+                                    alt="CI/CD Pipeline EconoMarket"
+                                    class="w-full h-72 object-contain p-2 group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=CI/CD+Pipeline'">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuerpo del Proyecto -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span
+                                class="text-xs font-bold text-white bg-secondary px-3 py-1 rounded-full uppercase tracking-wide">Software
+                                Avanzado - Cloud Native & DevOps</span>
+                            <span class="text-xs font-semibold text-slate-500">Arquitectura 100% Microservicios
+                                Políglota</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-800 mb-4">EconoMarket — Plataforma E-Commerce
+                            Distribuida en GKE</h3>
+
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <p>
+                                    Plataforma de comercio electrónico diseñada bajo una arquitectura de microservicios
+                                    desplegada en <strong>Google Kubernetes Engine (GKE)</strong> y reproducible
+                                    localmente con <strong>Docker Compose</strong>. El cliente web (React + TypeScript +
+                                    Tailwind) consume un <strong>API Gateway (NestJS)</strong> en REST, el cual enruta y
+                                    valida la seguridad mediante <strong>JWT</strong> comunicándose internamente con los
+                                    microservicios vía <strong>gRPC</strong>.
+                                </p>
+                                <p>
+                                    <strong>Microservicios implementados (Python, Go, TypeScript):</strong>
+                                    Autenticación (<code>users-auth</code>), Catálogo (<code>catalog</code>),
+                                    Carrito/Órdenes (<code>orders</code>), Pagos/Billetera
+                                    (<code>payments-wallet</code>), Notificaciones por correo SMTP
+                                    (<code>notifications</code>), Tipo de cambio con fallback en caché
+                                    (<code>fx-service</code>) e integración con proveedores externos.
+                                </p>
+                            </div>
+                            <div class="bg-blue-50/60 p-5 rounded-xl border border-blue-100 text-sm space-y-2">
+                                <h4 class="font-bold text-primary mb-2 flex items-center">
+                                    <svg class="w-4 h-4 mr-1.5 text-secondary" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                    Infraestructura, Monitoreo y Automatización (SRE/DevOps):
+                                </h4>
+                                <ul class="space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                    <li>• <strong>CI/CD Automatizado:</strong> Pipelines con validación de
+                                        <strong>Terraform y Ansible</strong>, pruebas unitarias por lenguaje,
+                                        publicación en <strong>DockerHub</strong> y actualización automática de
+                                        Deployments en K8s.
+                                    </li>
+                                    <li>• <strong>Alta Disponibilidad y Escalado:</strong> Configuración de
+                                        <code>HorizontalPodAutoscaler (HPA)</code> en el API Gateway (2 a 4 réplicas al
+                                        70% CPU) y control de cuotas (<code>requests/limits</code>).
+                                    </li>
+                                    <li>• <strong>Resiliencia y Salud:</strong> Monitoreo híbrido (gRPC/HTTP) con
+                                        <code>livenessProbe</code> y <code>readinessProbe</code>, reinicio automático y
+                                        gestión segura con <code>ConfigMaps</code>, <code>Secrets</code> e
+                                        <code>Ingress</code>.
+                                    </li>
+                                    <li>• <strong>Persistencia Híbrida:</strong> Instancia de <strong>MS SQL
+                                            Server</strong> en GCP y contenedor <strong>Redis Alpine</strong> para caché
+                                        de divisas y catálogos externos.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Mega Galería de Evidencias (Kubernetes, CI/CD y Frontend) -->
+                        <div class="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-200/80">
+                            <p class="text-xs font-bold text-slate-600 mb-4 uppercase tracking-wider">Galería de
+                                Infraestructura en Kubernetes, Pipelines y Aplicación (clic para ver en tamaño
+                                completo):</p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+                                <!-- K8s Pods Wide -->
+                                <a href="./images/Proyectos/tienda_online_comando_pods_wide.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_comando_pods_wide.png"
+                                        alt="Kubectl Pods Wide"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Pods+Running'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Pods
+                                        en GKE (Running)</span>
+                                </a>
+                                <!-- K8s Services -->
+                                <a href="./images/Proyectos/tienda_online_servicios_en_ks8_services.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_servicios_en_ks8_services.png"
+                                        alt="K8s Services"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=K8s+Services'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Networking
+                                        & Services</span>
+                                </a>
+                                <!-- Job Despliegue K8s -->
+                                <a href="./images/Proyectos/tienda_online_job_despliegue_ks8.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_job_despliegue_ks8.png"
+                                        alt="Job Despliegue K8s"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Deploy+Job'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Job
+                                        Despliegue K8s</span>
+                                </a>
+                                <!-- CI/CD Detalle -->
+                                <a href="./images/Proyectos/tienda_online_ci_cd.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_ci_cd.png" alt="Tests CI/CD"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=CI+Tests'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Build
+                                        & Unit Tests</span>
+                                </a>
+                                <!-- Estructura Services -->
+                                <a href="./images/Proyectos/tienda_online_services.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_services.png"
+                                        alt="Estructura Microservicios"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Services'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Catálogo
+                                        de Servicios</span>
+                                </a>
+
+                                <!-- Resultados UI 1 a 4 -->
+                                <a href="./images/Proyectos/tienda_online_resultado_1.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_resultado_1.jpeg"
+                                        alt="Resultado EconoMarket 1"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=App+Vista+1'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Interfaz
+                                        Tienda 1</span>
+                                </a>
+                                <a href="./images/Proyectos/tienda_online_resultado_2.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_resultado_2.jpeg"
+                                        alt="Resultado EconoMarket 2"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=App+Vista+2'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Interfaz
+                                        Tienda 2</span>
+                                </a>
+                                <a href="./images/Proyectos/tienda_online_resultado_3.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_resultado_3.jpeg"
+                                        alt="Resultado EconoMarket 3"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=App+Vista+3'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Interfaz
+                                        Tienda 3</span>
+                                </a>
+                                <a href="./images/Proyectos/tienda_online_resultado_4.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/tienda_online_resultado_4.jpeg"
+                                        alt="Resultado EconoMarket 4"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=App+Vista+4'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Interfaz
+                                        Tienda 4</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Etiquetas (Pills) -->
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Google
+                                Cloud (GKE)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Kubernetes
+                                (HPA, Ingress, Probes)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Docker
+                                & DockerHub</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">gRPC
+                                & Protobuf</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">NestJS
+                                (API Gateway)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">React
+                                + TypeScript</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Go
+                                (Golang)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Python</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">MS
+                                SQL Server</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Redis
+                                Cache</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">GitHub
+                                Actions (CI/CD)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Terraform
+                                & Ansible</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">JWT
+                                & OpenAPI</span>
+                        </div>
+
+                        <!-- Enlace inferior con botón al PDF de Requerimientos -->
+                        <div
+                            class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm">
+                            <span class="text-slate-500 font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-slate-400 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                                <span>Repositorio Privado (Grupo 7) • Imágenes en DockerHub
+                                    (<code>rafa0410/*</code>)</span>
+                            </span>
+
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a href="https://drive.google.com/file/d/1JYg18Wo7Y2q6QVpPUo8CPQf2cGkFckBI/view?usp=sharing"
+                                    target="_blank"
+                                    class="inline-flex items-center px-4 py-2 bg-green-700 text-white text-xs font-semibold rounded-lg hover:bg-green-600 transition shadow-sm">
+                                    📄 Documentación de Requerimientos (PDF)
+                                </a>
+                                <a href="./images/Proyectos/tienda_online_diagrama_arquitectura.png" target="_blank"
+                                    class="text-primary font-bold hover:text-secondary transition flex items-center">
+                                    Ver arquitectura <span class="ml-1">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Proyecto 4: Gestión de Backups con Percona XtraBackup (Bases de Datos 2) -->
+                <div
+                    class="lg:col-span-2 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col">
+
+                    <!-- Cabecera visual doble: Ejecución de Backups y Restauración -->
+                    <div class="p-6 bg-slate-100 border-b border-slate-200 grid md:grid-cols-2 gap-6">
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Generación de Backups
+                                Físicos en Caliente (Percona XtraBackup)</span>
+                            <a href="./images/Proyectos/bases_2/6_Comando_Full_Backup_dia_1.png" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900 border border-slate-200">
+                                <img src="./images/Proyectos/bases_2/6_Comando_Full_Backup_dia_1.png"
+                                    alt="Comando Full Backup XtraBackup"
+                                    class="w-full h-64 object-contain p-2 group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=XtraBackup+Full'">
+                            </a>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Automatización de
+                                Restauración en Frío y Validación (Bash)</span>
+                            <a href="./images/Proyectos/bases_2/32_restauracion_full_backup_dia3.png" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900 border border-slate-200">
+                                <img src="./images/Proyectos/bases_2/32_restauracion_full_backup_dia3.png"
+                                    alt="Restauración Automatizada Día 3"
+                                    class="w-full h-64 object-contain p-2 group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=Restauracion+Bash'">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuerpo del Proyecto -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span
+                                class="text-xs font-bold text-white bg-primary px-3 py-1 rounded-full uppercase tracking-wide">Bases
+                                de Datos 2 - DBA & Disaster Recovery</span>
+                            <span class="text-xs font-semibold text-slate-500">MySQL 8.0 (InnoDB) • Ubuntu Linux</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-800 mb-4">Estrategia de Backups Físicos, Recuperación y
+                            Auditoría con Percona XtraBackup</h3>
+
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <p>
+                                    Implementación de una arquitectura de recuperación ante desastres (<strong>Disaster
+                                        Recovery</strong>) a nivel físico (archivos binarios <code>.ibd</code> y LSN)
+                                    para la base de datos <code>Mundiales</code> en <strong>MySQL 8.0</strong>,
+                                    prescindiendo de volcados lógicos lentos (<code>mysqldump</code>). Se diseñó un
+                                    flujo de 3 días combinando <strong>Full Backups</strong> y <strong>Backups
+                                        Incrementales</strong> (deltas) en caliente mediante <strong>Percona XtraBackup
+                                        8.0</strong>.
+                                </p>
+                                <p>
+                                    Incluye ingesta masiva automatizada con scripts en <strong>Python</strong>
+                                    (mundiales 1930–2022 y actualizaciones masivas), auditoría automática con
+                                    <strong>Triggers</strong> en tablas <code>LOG</code> y monitoreo del porcentaje de
+                                    fragmentación física en páginas de 16 KB consultando <code>DATA_FREE</code> en
+                                    <code>information_schema.TABLES</code>.
+                                </p>
+                            </div>
+
+                            <!-- Cuadro de Métricas y Automatización -->
+                            <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 text-sm space-y-3">
+                                <h4 class="font-bold text-primary flex items-center">
+                                    <svg class="w-4 h-4 mr-1.5 text-secondary" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                    Automatización en Bash y Rendimiento Obtenido:
+                                </h4>
+                                <ul class="space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                    <li>• <strong>Scripts de Restauración (<code>.sh</code>):</strong> Automatización
+                                        del ciclo completo en frío (<em>Offline</em>): fase de consistencia LSN
+                                        (<code>--prepare</code>), parada de <code>mysqld</code>, limpieza de
+                                        <code>/var/lib/mysql</code>, copia física (<code>--copy-back</code>) y
+                                        restitución de permisos (<code>chown mysql:mysql</code>).
+                                    </li>
+                                    <li>• <strong>Optimización de Tiempos (Día 3):</strong> Reducción del tiempo de
+                                        respaldo de <strong>39.00 s (Full)</strong> a solo <strong>13.00 s
+                                            (Incremental)</strong> (~3x más rápido).</li>
+                                    <li>• <strong>Velocidad de Recuperación:</strong> Restauraciones físicas completadas
+                                        entre <strong>0.55 s y 0.65 s</strong> tanto en estrategia Full como en cadena
+                                        Incremental acumulativa.</li>
+                                    <li>• <strong>Control de Fragmentación:</strong> Mantenimiento en
+                                        <strong>0.00%</strong> verificado tras inserciones secuenciales y
+                                        actualizaciones masivas (<code>UPPER</code>).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Galería de Evidencias (Proceso Completo Día 1 a Día 3) -->
+                        <div class="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-200/80">
+                            <p class="text-xs font-bold text-slate-600 mb-4 uppercase tracking-wider">Evidencias de
+                                Cargas Masivas, Auditoría de Fragmentación y Restauraciones (clic para ampliar):</p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                                <!-- 1. Carga Python Día 1 -->
+                                <a href="./images/Proyectos/bases_2/2_Script_dia_1.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/2_Script_dia_1.png" alt="Script Carga Día 1"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Script+Dia+1'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Ingesta
+                                        Python (1930-1978)</span>
+                                </a>
+                                <!-- 2. Auditoría LOGs y Fragmentación -->
+                                <a href="./images/Proyectos/bases_2/4_Verificacion_LOGs_dia_1.png" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/4_Verificacion_LOGs_dia_1.png"
+                                        alt="Verificación LOGs y Fragmentación"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Triggers+LOG'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Triggers
+                                        LOG & Fragmentación</span>
+                                </a>
+                                <!-- 3. Backup Incremental Día 2 -->
+                                <a href="./images/Proyectos/bases_2/16_Comando_Backup_Incremental_dia_2_final.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/16_Comando_Backup_Incremental_dia_2_final.png"
+                                        alt="Backup Incremental Día 2"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Incremental+D2'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Backup
+                                        Incremental Día 2</span>
+                                </a>
+                                <!-- 4. Verificación Archivos Físicos -->
+                                <a href="./images/Proyectos/bases_2/27_verificacion_creacion_carpeta_backup_incremental_dia_3.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/27_verificacion_creacion_carpeta_backup_incremental_dia_3.png"
+                                        alt="Carpeta Incremental Día 3"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Archivos+Deltas'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Deltas
+                                        Físicos (Día 3)</span>
+                                </a>
+                                <!-- 5. Restauración Full Día 1 -->
+                                <a href="./images/Proyectos/bases_2/28_restauracion_full_backup_dia1.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/28_restauracion_full_backup_dia1.png"
+                                        alt="Restauración Full Día 1"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Restore+Full+D1'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Restauración
+                                        Full (0.55s)</span>
+                                </a>
+                                <!-- 6. Validación Nombres Normales -->
+                                <a href="./images/Proyectos/bases_2/31_validacion_full_backup_dia_2_nombres_normales.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/31_validacion_full_backup_dia_2_nombres_normales.png"
+                                        alt="Validación Día 2"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Validacion+D2'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Estado
+                                        Restaurado Día 2</span>
+                                </a>
+                                <!-- 7. Restauración Incremental Día 3 -->
+                                <a href="./images/Proyectos/bases_2/38_restauracion_backup_incremental_dia_3.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/38_restauracion_backup_incremental_dia_3.png"
+                                        alt="Restauración Incremental Día 3"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Restore+Inc+D3'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Fusión
+                                        Incremental Día 3</span>
+                                </a>
+                                <!-- 8. Validación Nombres Mayúsculas -->
+                                <a href="./images/Proyectos/bases_2/39_validacion_nombres_mayusculas_incremental_dia_3.png"
+                                    target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/bases_2/39_validacion_nombres_mayusculas_incremental_dia_3.png"
+                                        alt="Validación Mayúsculas Día 3"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Validacion+UPPER'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Validación
+                                        Post-Restore (UPPER)</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Etiquetas (Pills) -->
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">MySQL
+                                8.0 (InnoDB)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Percona
+                                XtraBackup 8.0</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Bash
+                                Scripting (.sh)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Python
+                                (Automatización ETL)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">SQL
+                                Triggers & Auditoría</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Análisis
+                                de Fragmentación</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Ubuntu
+                                Linux Administration</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Disaster
+                                Recovery</span>
+                        </div>
+
+                        <!-- Enlace inferior -->
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-sm">
+                            <span class="text-slate-500 font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-slate-400" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                                Repositorio Académico Privado • Documentación Técnica y Pruebas de Restauración
+                            </span>
+                            <a href="./images/Proyectos/bases_2/32_restauracion_full_backup_dia3.png" target="_blank"
+                                class="text-primary font-bold hover:text-secondary transition flex items-center">
+                                Ver consola de restauración <span class="ml-1">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Proyecto 5: SmartCity Zona 1 - IoT, Edge Computing & IA (Arquitectura de Computadores 2) -->
+                <div
+                    class="lg:col-span-2 bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 border border-slate-200/80 flex flex-col">
+
+                    <!-- Cabecera visual doble: Arquitectura IoT/IA y Maqueta Física Zona 1 -->
+                    <div class="p-6 bg-slate-100 border-b border-slate-200 grid md:grid-cols-2 gap-6">
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Arquitectura Integrada
+                                (IoT + Edge + IA + Cloud)</span>
+                            <a href="./images/Proyectos/arqui_2/arquitectura.png" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-white border border-slate-200">
+                                <img src="./images/Proyectos/arqui_2/arquitectura.png"
+                                    alt="Arquitectura SmartCity Arqui 2"
+                                    class="w-full h-72 object-contain p-2 group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=Arquitectura+IoT+IA'">
+                            </a>
+                        </div>
+                        <div>
+                            <span class="block text-xs font-bold text-slate-500 uppercase mb-2">Maqueta a Escala —
+                                Centro Histórico Zona 1 (Sensores y Actuadores)</span>
+                            <a href="./images/Proyectos/arqui_2/resultad_3.jpeg" target="_blank"
+                                class="block overflow-hidden rounded-xl shadow-sm group bg-slate-900 border border-slate-200">
+                                <img src="./images/Proyectos/arqui_2/resultad_3.jpeg"
+                                    alt="Maqueta Centro Histórico Zona 1"
+                                    class="w-full h-72 object-cover group-hover:scale-105 transition duration-300"
+                                    onerror="this.src='https://via.placeholder.com/600x400?text=Maqueta+Zona+1'">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cuerpo del Proyecto -->
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                            <span
+                                class="text-xs font-bold text-white bg-secondary px-3 py-1 rounded-full uppercase tracking-wide">Arquitectura
+                                de Computadores y Ensambladores 2</span>
+                            <span class="text-xs font-semibold text-slate-500">IoT • Edge Computing • Computer Vision •
+                                Flutter</span>
+                        </div>
+                        <h3 class="text-3xl font-bold text-slate-800 mb-4">SmartCity Zona 1 — Sistema Inteligente de
+                            Seguridad y Gestión de Tráfico Urbano</h3>
+
+                        <div class="grid md:grid-cols-2 gap-8 mb-8">
+                            <div class="space-y-3 text-slate-600 text-sm leading-relaxed">
+                                <p>
+                                    Plataforma integral de seguridad ciudadana y monitoreo de tráfico a escala inspirada
+                                    en el <strong>Centro Histórico de la Zona 1 de Guatemala</strong>. El ecosistema
+                                    evolucionó en 3 fases: desde el control local de sensores (gas MQ-2, sismos,
+                                    ultrasónicos, botones de pánico y semáforos LED) con <strong>Arduino UNO</strong>,
+                                    pasando por procesamiento en el borde (<em>Edge Computing</em>) con una
+                                    <strong>Raspberry Pi 4</strong> como servidor central y broker <strong>MQTT
+                                        (Mosquitto)</strong>, hasta la integración de modelos de <strong>Inteligencia
+                                        Artificial</strong>.
+                                </p>
+                                <p>
+                                    El sistema procesa video en tiempo real para ejecutar tres módulos de visión
+                                    computacional: <strong>lectura de placas en semáforo rojo (YOLOv8 +
+                                        EasyOCR)</strong>, <strong>reconocimiento facial en lista negra (embeddings +
+                                        distancia euclidiana)</strong> y <strong>detección de armas blancas</strong>,
+                                    disparando alertas físicas inmediatas (buzzer/LEDs vía serial), almacenamiento en
+                                    <strong>MongoDB Atlas</strong> y analítica en <strong>Grafana</strong>.
+                                </p>
+                            </div>
+
+                            <!-- Aporte Específico y Ecosistema -->
+                            <div class="bg-blue-50/60 p-5 rounded-xl border border-blue-100 text-sm space-y-2">
+                                <h4 class="font-bold text-primary mb-2 flex items-center">
+                                    <svg class="w-4 h-4 mr-1.5 text-secondary" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                    Aporte Principal (Frontend Flutter, MQTT & Visualización):
+                                </h4>
+                                <ul class="space-y-1.5 text-slate-700 text-xs leading-relaxed">
+                                    <li>• <strong>App Multiplataforma (Flutter):</strong> Diseño y desarrollo del
+                                        <em>Dashboard IA</em> y las vistas de monitoreo: <code>Top Personas</code>,
+                                        <code>Top Armas</code>, <code>Infracciones del Día</code> y administración de
+                                        <code>Lista Negra</code>.
+                                    </li>
+                                    <li>• <strong>Alertas en Tiempo Real (MQTT + Streams):</strong> Suscripción a los
+                                        tópicos <code>smartcity/alertas/{placa|persona|arma}</code> mediante
+                                        <code>mqtt_client</code> para notificaciones instantáneas.
+                                    </li>
+                                    <li>• <strong>Gráficas Dinámicas:</strong> Implementación de gráficos de barras,
+                                        líneas y pastel (<code>fl_chart</code>) conectados a la API REST
+                                        (<code>/api/estadisticas</code>).</li>
+                                    <li>• <strong>Cultura y Turismo (QR):</strong> Portal web integrado con códigos QR
+                                        en puntos históricos y santuarios de la ciudad.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Galería de Evidencias (Maqueta, Dashboards y App Flutter) -->
+                        <div class="mb-8 bg-slate-50 p-5 rounded-xl border border-slate-200/80">
+                            <p class="text-xs font-bold text-slate-600 mb-4 uppercase tracking-wider">Galería de
+                                Prototipo Físico, Monitoreo y Aplicación Flutter (clic para ampliar):</p>
+
+                            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                                <!-- 1. Dashboard Monitoreo -->
+                                <a href="./images/Proyectos/arqui_2/resultado_1.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_1.jpeg" alt="Dashboard de Control"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Dashboard'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Panel
+                                        de Control IoT</span>
+                                </a>
+                                <!-- 2. Maqueta Vista 2 -->
+                                <a href="./images/Proyectos/arqui_2/resultado_2.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_2.jpeg" alt="Maqueta Zona 1 Vista 2"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Maqueta+2'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Maqueta
+                                        y Semáforos</span>
+                                </a>
+                                <!-- 3. Reportes y Eventos -->
+                                <a href="./images/Proyectos/arqui_2/resultado_4.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_4.jpeg" alt="Registros y Reportes"
+                                        class="w-full h-28 object-cover group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Registros'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">Tarjetas
+                                        de Eventos</span>
+                                </a>
+                                <!-- 4. App Flutter Alertas -->
+                                <a href="./images/Proyectos/arqui_2/resultado_5.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_5.jpeg"
+                                        alt="Flutter Dashboard Sensores"
+                                        class="w-full h-28 object-contain bg-slate-900 group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Flutter+1'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">App:
+                                        Estado Sensores</span>
+                                </a>
+                                <!-- 5. App Flutter Placas -->
+                                <a href="./images/Proyectos/arqui_2/resultado_6.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_6.jpeg"
+                                        alt="Flutter Detección Placas"
+                                        class="w-full h-28 object-contain bg-slate-900 group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Flutter+Placas'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">App:
+                                        Infracción Placa</span>
+                                </a>
+                                <!-- 6. App Flutter Armas -->
+                                <a href="./images/Proyectos/arqui_2/resultado_7.jpeg" target="_blank"
+                                    class="block border border-slate-200 rounded-lg overflow-hidden hover:border-secondary hover:shadow-md transition bg-white group">
+                                    <img src="./images/Proyectos/arqui_2/resultado_7.jpeg" alt="Flutter Detección Armas"
+                                        class="w-full h-28 object-contain bg-slate-900 group-hover:scale-105 transition"
+                                        onerror="this.src='https://via.placeholder.com/200x120?text=Flutter+Armas'">
+                                    <span
+                                        class="block text-[11px] font-medium text-center text-slate-700 py-1.5 bg-slate-50 border-t truncate px-1">App:
+                                        Alerta de Arma</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Etiquetas (Pills) -->
+                        <div class="flex flex-wrap gap-2 mb-6 mt-auto">
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Raspberry
+                                Pi 4 (Edge Server)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Arduino
+                                UNO & Sensores IoT</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">MQTT
+                                (Mosquitto Broker)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-semibold text-blue-900 bg-blue-100 border border-blue-200 rounded-full">Flutter
+                                & Dart</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Python
+                                (YOLOv8, EasyOCR, OpenCV)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Reconocimiento
+                                Facial</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Node.js
+                                / Express (API REST)</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">MongoDB
+                                Atlas</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">Grafana
+                                Dashboards</span>
+                            <span
+                                class="px-3 py-1 text-xs font-medium text-slate-700 bg-white border border-slate-300 rounded-full">C++
+                                (Serial)</span>
+                        </div>
+
+                        <!-- Enlaces inferiores -->
+                        <div
+                            class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4 text-sm">
+                            <span class="text-slate-500 font-medium flex items-center">
+                                <svg class="w-4 h-4 mr-1.5 text-slate-400 shrink-0" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                                    </path>
+                                </svg>
+                                <span>Repositorio Grupal Privado (Sección B)</span>
+                            </span>
+
+                            <div class="flex flex-wrap items-center gap-3">
+                                <a href="https://josmalopez77.github.io/ACYE2/" target="_blank"
+                                    class="inline-flex items-center px-4 py-2 bg-secondary text-white text-xs font-semibold rounded-lg hover:bg-primary transition shadow-sm">
+                                    🌐 Ver Portal Web Cultural (QR)
+                                </a>
+                                <a href="https://cd3942492320101.grafana.net/dashboard/snapshot/bzrKMM2k2qc3ryjnNwNYDo2crH2Y21ct"
+                                    target="_blank"
+                                    class="inline-flex items-center px-4 py-2 bg-slate-800 text-white text-xs font-semibold rounded-lg hover:bg-slate-700 transition shadow-sm">
+                                    📊 Ver Snapshot en Grafana
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Espacio para los siguientes proyectos -->
+
+            </div>
+        </div>
+
+
+        </div>
+
+        <!-- Tarjeta de enlace a GitHub (Estilo minimalista adaptado) -->
+        <div class="mt-14 max-w-xl mx-auto">
+            <a href="https://github.com/rafa-04102000" target="_blank"
+                class="group flex items-center p-6 bg-white hover:bg-gradient-to-r hover:from-primary hover:to-secondary rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-xl transition-all duration-300">
+
+                <!-- Caja del Ícono -->
+                <div
+                    class="w-14 h-14 rounded-xl bg-blue-50 border border-blue-100 group-hover:bg-white/10 group-hover:border-white/20 flex items-center justify-center mr-5 shrink-0 transition-colors duration-300">
+                    <svg class="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+
+                <!-- Textos -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <h3
+                            class="text-xl font-bold text-slate-800 group-hover:text-white transition-colors duration-300">
+                            GitHub</h3>
+                        <svg class="w-4 h-4 text-slate-400 group-hover:text-accent group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 17L17 7M17 7H7M17 7V17"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-slate-500 group-hover:text-blue-100 transition-colors duration-300 mt-1">
+                        Explora más proyectos y repositorios públicos en <span
+                            class="font-semibold underline decoration-blue-300">@rafa-04102000</span>
+                    </p>
+                </div>
+
+            </a>
+        </div>
+
+        </div>
+    </section>
+    </section>
+
+    <!-- Tecnologías (Tech Stack) -->
+    <section id="tecnologias" class="bg-blue-50 py-20 border-t border-slate-100">
+        <div class="max-w-5xl mx-auto px-4">
+
+            <!-- Banner Tech Stack -->
+            <div class="mb-14 text-center">
+                <img src="./images/Tech stack.png" alt="Tech Stack Banner"
+                    class="w-full rounded-xl shadow-lg border-4 border-white"
+                    onerror="this.src='https://via.placeholder.com/900x200?text=Tech+Stack'">
+            </div>
+
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-3">Stack Tecnológico y Herramientas</h2>
+                <p class="text-slate-600 text-sm">
+                    Tecnologías, lenguajes e infraestructura adquiridos mediante formación académica e investigación
+                    autodidacta aplicada a proyectos reales.
+                </p>
+            </div>
+
+            <!-- Contenedor de Categorías estilo Iconos -->
+            <div class="bg-slate-900 text-white p-8 md:p-12 rounded-3xl shadow-xl space-y-10 border border-slate-800">
+
+                <!-- 1. Lenguajes -->
+                <div>
+                    <h3
+                        class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                        Lenguajes:</h3>
+                    <div class="flex justify-center">
+                        <img src="https://skillicons.dev/icons?i=js,py,go,ts,cs,cpp,java,dart&perline=8" alt="Lenguajes"
+                            class="max-w-full h-auto hover:scale-[1.02] transition duration-300" />
+                    </div>
+                </div>
+
+                <!-- 2. Frontend & Mobile -->
+                <div>
+                    <h3
+                        class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                        Frontend & Mobile:</h3>
+                    <div class="flex justify-center">
+                        <img src="https://skillicons.dev/icons?i=react,redux,tailwind,flutter,html,css,django,flask,materialui,npm,vite&perline=11"
+                            alt="Frontend" class="max-w-full h-auto hover:scale-[1.02] transition duration-300" />
+                    </div>
+                </div>
+
+                <!-- 3. Backend & Datos -->
+                <div>
+                    <h3
+                        class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                        Backend & Datos:</h3>
+                    <div class="flex justify-center">
+                        <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,dotnet,mysql,mongodb,postgres,redis&perline=8"
+                            alt="Backend y Datos"
+                            class="max-w-full h-auto hover:scale-[1.02] transition duration-300" />
+                    </div>
+                </div>
+
+                <!-- 4. DevOps & Cloud -->
+                <div>
+                    <h3
+                        class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                        DevOps & Cloud:</h3>
+                    <div class="flex justify-center">
+                        <img src="https://skillicons.dev/icons?i=docker,kubernetes,gcp,aws,azure,linux,git,githubactions,github,gitlab,nginx,terraform,ansible&perline=13"
+                            alt="DevOps y Cloud" class="max-w-full h-auto hover:scale-[1.02] transition duration-300" />
+                    </div>
+                </div>
+
+                <!-- 5. Plataformas y Editores (En 2 columnas para aprovechar el espacio) -->
+                <div class="grid md:grid-cols-2 gap-8 pt-2">
+                    <div>
+                        <h3
+                            class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                            Plataformas:</h3>
+                        <div class="flex justify-center">
+                            <img src="https://skillicons.dev/icons?i=windows,linux,ubuntu" alt="Plataformas"
+                                class="max-w-full h-auto hover:scale-105 transition duration-300" />
+                        </div>
+                    </div>
+                    <div>
+                        <h3
+                            class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                            Editores o IDEs:</h3>
+                        <div class="flex justify-center">
+                            <img src="https://skillicons.dev/icons?i=vscode,visualstudio" alt="Editores o IDEs"
+                                class="max-w-full h-auto hover:scale-105 transition duration-300" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Otras herramientas/tecnologías utilizadas -->
+                <div>
+                    <h3
+                        class="text-sm font-bold text-blue-300 uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
+                        Otras herramientas / tecnologías utilizadas:</h3>
+                    <div class="flex justify-center">
+                        <img src="https://skillicons.dev/icons?i=arduino,bash,firebase,grafana,kafka,latex,powershell,postman,rabbitmq,r,raspberrypi,regex,rust&perline=13"
+                            alt="Otras herramientas"
+                            class="max-w-full h-auto hover:scale-[1.02] transition duration-300" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Estado Académico, EPS y Prácticas Profesionales -->
+    <section id="formacion" class="py-20 bg-blue-50 border-t border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-4 space-y-16">
+
+            <!-- 1. Bloque Destacado: Cierre de Pensum y EPS -->
+            <div
+                class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 md:p-10 text-white shadow-lg flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="space-y-3 md:w-2/3">
+                    <div
+                        class="inline-flex items-center space-x-2 bg-white/15 px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                        <span>🎓 Situación Académica Actual</span>
+                    </div>
+                    <h2 class="text-3xl font-bold">Cierre de Pensum & Desarrollo de EPS</h2>
+                    <p class="text-blue-100 text-sm md:text-base leading-relaxed">
+                        Actualmente cuento con <strong>cierre de pensum</strong> en la carrera de Ingeniería en Ciencias
+                        y Sistemas en la Universidad de San Carlos de Guatemala (USAC), encontrándome en la etapa final
+                        de graduación mediante el desarrollo del <strong>Ejercicio Profesional Supervisado
+                            (EPS)</strong>.
+                    </p>
+                </div>
+                <div
+                    class="md:w-1/3 flex flex-col items-center justify-center bg-white/10 p-6 rounded-xl border border-white/20 text-center w-full">
+                    <span class="text-xs uppercase tracking-wider text-blue-200 font-semibold mb-1">Método de
+                        Graduación</span>
+                    <span class="text-2xl font-bold text-white mb-2">EPS en Curso</span>
+                    <!-- <span
+                        class="text-xs bg-green-400/20 text-green-200 border border-green-400/30 px-3 py-1 rounded-full font-medium">Disponibilidad
+                        Inmediata</span> -->
+                </div>
+            </div>
+
+            <!-- 2. Experiencia Práctica, Pasantías y Voluntariado -->
+            <div>
+                <div class="text-center max-w-2xl mx-auto mb-12">
+                    <span class="text-secondary font-bold tracking-wider uppercase text-xs">Trayectoria Práctica</span>
+                    <h2 class="text-3xl font-bold text-primary mt-1 mb-3">Pasantías y Voluntariado Técnico</h2>
+                    <p class="text-slate-600 text-sm">
+                        Experiencias previas aplicando desarrollo de software, consultas SQL y soporte de
+                        infraestructura y redes en entornos institucionales y empresariales.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+
+                    <!-- Hacienda Real -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 border-l-4 border-l-secondary hover:shadow-md transition">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Desarrollador Junior</h3>
+                                <p class="text-secondary font-semibold text-sm">Hacienda Real</p>
+                            </div>
+                            <span
+                                class="bg-blue-50 text-primary text-xs font-semibold px-3 py-1 rounded-full border border-blue-200">
+                                Voluntariado • Mar 2025 – Abr 2025
+                            </span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-1.5 mt-4">
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Elaboración y
+                                optimización de consultas SQL en MySQL.</li>
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Desarrollo y ajuste
+                                de lógicas de negocio en JavaScript.</li>
+                        </ul>
+                    </div>
+
+                    <!-- INN APP -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 border-l-4 border-l-secondary hover:shadow-md transition">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Desarrollador Junior</h3>
+                                <p class="text-secondary font-semibold text-sm">INN APP (Campus TEC, Zona 4)</p>
+                            </div>
+                            <span
+                                class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full border border-slate-200">
+                                Nov 2019 – Dic 2019
+                            </span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-1.5 mt-4">
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Desarrollo e
+                                implementación de interfaces para aplicaciones móviles multiplataforma utilizando
+                                <strong>React Native</strong>.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Nuestro Diario -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 border-l-4 border-l-secondary hover:shadow-md transition">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Desarrollador Junior</h3>
+                                <p class="text-secondary font-semibold text-sm">Nuestro Diario (Zona 12)</p>
+                            </div>
+                            <span
+                                class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full border border-slate-200">
+                                Pasantía • Ago 2019 – Oct 2019
+                            </span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-1.5 mt-4">
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Desarrollo de
+                                aplicación web bajo arquitectura MVC con <strong>Laravel</strong>.</li>
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Implementación de
+                                tableros y gráficas interactivas con <strong>Chart.js y React.js</strong>.</li>
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Consultas SQL para
+                                la gestión y extracción de datos.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Organismo Judicial -->
+                    <div
+                        class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/80 border-l-4 border-l-primary hover:shadow-md transition">
+                        <div class="flex flex-wrap justify-between items-start gap-2 mb-3">
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-800">Técnico en Mantenimiento de Hardware</h3>
+                                <p class="text-secondary font-semibold text-sm">Organismo Judicial (Chimaltenango y La
+                                    Antigua Guatemala)</p>
+                            </div>
+                            <span
+                                class="bg-slate-100 text-slate-700 text-xs font-semibold px-3 py-1 rounded-full border border-slate-200">
+                                Pasantía • Oct 2018 – Dic 2018
+                            </span>
+                        </div>
+                        <ul class="text-sm text-slate-600 space-y-1.5 mt-4">
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Diagnóstico y
+                                mantenimiento preventivo/correctivo de equipo de cómputo.</li>
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Instalación y
+                                configuración de redes internas en tribunales.</li>
+                            <li class="flex items-center"><span class="text-secondary mr-2">•</span> Configuración y
+                                soporte de impresoras en red.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Nota de Referencias -->
+                <p class="text-center text-xs text-slate-400 mt-8">
+                    * Referencias laborales y personales con números de contacto disponibles en la versión descargable
+                    del CV en PDF.
+                </p>
+            </div>
+
+        </div>
+    </section>
